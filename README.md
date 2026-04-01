@@ -1,119 +1,90 @@
-# Explore AI Governance
-date: 4/1/2026
+Date: 4/1/2026
+# Explore AI Governance — FraudClassifier Constitution
 
-**Exploring how AI systems can be governed by design — transparently, responsibly, and collaboratively.**
+**A lightweight, human-readable governance scaffold for applying the Federal Reserve’s FraudClassifier℠ model with AI — transparently, consistently, and with human oversight.** [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)
 
-This repository is a *thinking space*, not a product and not an implementation requirement.
+This repository is intentionally simple: it’s a *conversation artifact*, not a product and not a reference implementation.
 
-It exists to explore a simple question:
-
-> **What would it look like if AI systems were governed using clear, human‑readable principles from the start?**
-
----
-
-## 🌍 Why this repository exists
-
-Across regulated industries — especially payments, fraud, and financial crime —  
-we already have strong foundations:
-
-- Shared taxonomies  
-- Industry‑aligned definitions  
-- Clear expectations for oversight and accountability  
-
-What’s often missing is a **lightweight, explicit governance layer** that explains:
-
-- how AI is allowed to reason  
-- what evidence is required  
-- how uncertainty is handled  
-- when humans must intervene  
-
-This repository explores that missing layer.
+> **Big idea:** FraudClassifier gives the industry a shared fraud language.  
+> This repo explores how AI can apply that language **with explicit governance-by-design**. [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)
 
 ---
 
-## 📄 What is a **`constitution.md`**?
+## 🌍 Why this exists
 
-At the center of this repo is a simple idea:
+The Federal Reserve’s FraudClassifier℠ model was created to address inconsistent fraud classifications and definitions across the payments ecosystem. [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)
 
-Instead of hiding governance rules inside code or models,  
-**write them down — clearly and publicly.**
+FraudClassifier is designed to:
+- classify fraud **independent of payment type, channel, or other payment characteristics** [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)  
+- use a **question-driven approach** starting with “who initiated the payment,” separating authorized vs. unauthorized initiation [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)  
+- include **supporting definitions** to promote consistent application across organizations [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)  
 
-A `constitution.md` is:
-- ✅ human‑readable  
-- ✅ principle‑based  
-- ✅ auditable  
-- ✅ technology‑agnostic  
+That foundation is powerful. The question now is:
 
-It does **not** define algorithms.  
-It defines **boundaries, responsibilities, and expectations**.
-
-Think of it as:
-> a shared contract for how AI *should behave* in sensitive workflows.
+> **If AI helps classify fraud, how do we ensure it follows the same definitions, requires evidence, handles uncertainty responsibly, and stays auditable?** [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)
 
 ---
 
-## 🧠 How this connects to real‑world use cases
+## 📄 What is `constitution.md`?
 
-In domains like fraud and payments:
-- Decision trees already exist  
-- Definitions are already agreed upon  
-- Oversight expectations are already high  
+A `constitution.md` is a **lightweight governance layer** written in plain language.
 
-This work explores how AI can **operate within those constraints** —  
-not replace them.
+It defines how AI agents *should behave* when applying a decision tree like FraudClassifier:
+- what evidence is required at each decision point  
+- how confidence and uncertainty should be handled  
+- when human review is mandatory  
+- how decisions must be explainable and auditable  
+
+It does **not**:
+- replace the FraudClassifier model  
+- create new fraud definitions  
+- prescribe a specific vendor or architecture  
+
+It simply makes governance explicit and reviewable. [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)
+
+- Start here: [`constitution.md`](./constitution.md)
+
+---
+
+## ✅ What’s in this repo
+
+- **`constitution.md`** — the governance principles (human-readable)
+- **`README.md`** — this landing page
+
+That’s intentional: the goal is to keep it accessible for business, risk, policy, and SME audiences.
 
 ---
 
 ## 🤝 Who this is for
 
-This repo is intentionally open and lightweight.
+This repository is for:
+- payments and fraud subject-matter experts  
+- risk, compliance, audit, and governance leaders  
+- policymakers exploring AI oversight  
+- practitioners experimenting with tools like Claude or GitHub Copilot to reason through governed workflows  
 
-It’s for:
-- Risk, compliance, and governance leaders  
-- Payments and fraud subject‑matter experts  
-- Policymakers and regulators exploring AI oversight  
-- Practitioners experimenting with tools like **Claude** or **GitHub Copilot** to reason through workflows  
-- Anyone curious about **governance‑by‑design**, not AI hype  
-
-No coding required.
-
----
-
-## ⚠️ What this is *not*
-
-- ❌ A product  
-- ❌ A reference implementation  
-- ❌ A mandate  
-- ❌ A regulatory position  
-
-It’s an **exploration**.
+No coding required to participate.
 
 ---
 
 ## ✍️ How to engage
 
-- Read the `constitution.md`
-- Challenge assumptions
-- Propose principles
-- Share perspectives from your domain
+- Read `constitution.md`
+- Suggest principles / guardrails to strengthen governance
+- Share scenarios where “authorized vs unauthorized” classification is difficult in practice
+- Propose how evidence requirements and escalation should work
 
-If you’re experimenting with AI tools, this document is designed to be something those tools can *reason with*, not execute blindly.
+If you’re “vibe coding” with AI tools, this doc is meant to be something those tools can reason with — without turning this repo into a software project.
 
 ---
 
 ## 📌 Disclaimer
 
 This repository is provided for exploratory and educational purposes only.  
-Adoption is voluntary.  
-Each organization remains responsible for its own governance, compliance, and operational decisions.
+Adoption is voluntary. Each organization remains responsible for its own governance, compliance, and operational decisions.
 
 ---
 
-**Exploration beats assumptions.**  
-**Governance beats retrofitting.**
-
-Convert FraudClassifier into “Taxonomy-as-Code” + “Governance-as-Code”
-A) Taxonomy-as-Code
-Represent the FraudClassifier decision tree + definitions as a machine-readable artifact
-
+**Shared definitions create shared understanding.** [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)  
+**Explicit governance makes AI operationally trustworthy.**
 
