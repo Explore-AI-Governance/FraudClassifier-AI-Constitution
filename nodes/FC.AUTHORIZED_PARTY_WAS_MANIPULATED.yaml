@@ -1,0 +1,30 @@
+node_id: FC.AUTHORIZED_PARTY_WAS_MANIPULATED
+question_context:
+  q1: "Who initiated the payment?"
+  answer: "Authorized party"
+definition_ref: "Fed FraudClassifier supporting definition link/id"
+required_evidence:
+  - customer_intent_signal
+  - communication_context
+  - beneficiary_change_indicator
+  - payment_initiation_channel
+confidence_thresholds:
+  auto_classify_min: 0.80
+  human_review_below: 0.80
+policy_gates:
+  - if: "beneficiary_change_indicator == true AND amount > 25000"
+    then: "mandatory_human_review"
+  - if: "evidence_missing(customer_intent_signal)"
+    then: "ask_clarifying_questions"
+explanation_template:
+  must_include:
+    - "FraudClassifier path"
+    - "Top 3 evidence signals"
+    - "What would change this classification"
+audit:
+  log_fields:
+    - node_id
+    - evidence_citations
+    - model_version
+    - prompt_hash
+    - reviewer_id_if_any
