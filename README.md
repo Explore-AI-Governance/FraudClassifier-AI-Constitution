@@ -1,4 +1,6 @@
 Date: 4/1/2026
+The FraudClassifier is already a decision based framework. You can explore it here https://fedpaymentsimprovement.org/fraudclassifier/index.html
+
 # Explore AI Governance — FraudClassifier Constitution
 
 **A lightweight, human-readable governance scaffold for applying the Federal Reserve’s FraudClassifier℠ model with AI — transparently, consistently, and with human oversight.** [1](https://fedpaymentsimprovement.org/strategic-initiatives/payments-security/fraudclassifier-model/)[2](https://www.federalreserve.gov/newsevents/pressreleases/other20200618a.htm)
